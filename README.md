@@ -74,10 +74,10 @@ button { width: 180px; }
 <p>Tutti i miei link ufficiali</p>
 
 <!-- Pulsanti -->
-<button onclick="window.location.href='https://instagram.com/tuonome'">Instagram</button>
-<button onclick="window.location.href='https://tiktok.com/tuonome'">TikTok</button>
-<button onclick="window.location.href='https://twitter.com/tuonome'">Twitter</button>
-<button onclick="window.location.href='https://onlyfans.com/tuonome'">Contenuti esclusivi</button>
+<button onclick="window.location.href='https://www.instagram.com/mary.delillo?igsh=NGg4MW9vMzZyanRt&utm_source=qr'">Instagram</button>
+<button onclick="window.location.href='https://www.tiktok.com/@marydelilloofficial?_r=1&_t=ZN-91fms8Tr71K'">TikTok</button>
+<button onclick="window.location.href='https://onlyfans.com/marydelillo'">Contenuti esclusivi</button>
+<button onclick="window.location.href='https://t.me/MaryDeLilloVirgo'">Telegram</button>
 
 </body>
 </html>

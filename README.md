@@ -6,7 +6,7 @@
 <title>Mary De Lillo</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
-/* Reset */
+/* Reset e font */
 body, html { margin: 0; padding: 0; height: 100%; font-family: 'Montserrat', sans-serif; }
 
 /* Splash screen */
@@ -14,12 +14,12 @@ body, html { margin: 0; padding: 0; height: 100%; font-family: 'Montserrat', san
 position: fixed;
 top: 0; left: 0;
 width: 100%; height: 100%;
-background: #ff5a5f;
+background: linear-gradient(135deg, #ff5a5f, #ff8a65);
 color: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 28px;
+font-size: 32px;
 font-weight: bold;
 z-index: 9999;
 transition: opacity 0.5s ease;
@@ -29,7 +29,7 @@ transition: opacity 0.5s ease;
 #main {
 display: none;
 text-align: center;
-background: #f0f0f5;
+background: linear-gradient(to bottom, #f0f0f5, #e0dfee);
 min-height: 100vh;
 padding-top: 50px;
 }
@@ -38,14 +38,15 @@ img {
 border-radius: 50%;
 width: 160px;
 box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-transition: transform 0.3s;
 margin-bottom: 20px;
+transition: transform 0.3s;
 }
 img:hover { transform: scale(1.05); }
 
-h1 { font-size: 34px; margin: 10px 0; }
+h1 { font-size: 36px; margin: 10px 0; }
 p { font-size: 18px; color: #555; margin-bottom: 50px; }
 
+/* Pulsanti con animazione */
 .button {
 display: block;
 margin: 12px auto;
@@ -59,11 +60,17 @@ color: #fff;
 background: linear-gradient(135deg, #ff5a5f, #ff8a65);
 text-decoration: none;
 cursor: pointer;
-transition: 0.3s;
+opacity: 0;
+transform: translateY(20px);
+animation: fadeInUp 0.6s forwards;
 }
-.button:hover {
-transform: translateY(-3px);
-box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+.button:nth-child(1) { animation-delay: 0.5s; }
+.button:nth-child(2) { animation-delay: 0.8s; }
+.button:nth-child(3) { animation-delay: 1.1s; }
+.button:nth-child(4) { animation-delay: 1.4s; }
+
+@keyframes fadeInUp {
+to { opacity: 1; transform: translateY(0); }
 }
 
 /* Mobile */
@@ -76,7 +83,7 @@ img { width: 130px; }
 <body>
 
 <!-- Splash screen -->
-<div id="splash">Ciao, benvenuto!</div>
+<div id="splash">✨ Ciao, benvenuto! ✨</div>
 
 <!-- Pagina principale -->
 <div id="main">
